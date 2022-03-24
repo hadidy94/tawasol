@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="17.877" viewBox="0 0 21 17.877">
+  <g id="back_arrow" transform="translate(1 1.414)">
+    <g id="Arrow_-_Left" data-name="Arrow - Left" transform="translate(19 0) rotate(90)">
+      <path id="Stroke_1" data-name="Stroke 1" d="M0,19V0" transform="translate(7.525 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Stroke_3" data-name="Stroke 3" d="M15.049,0,7.525,7.663,0,0" transform="translate(0 11.337)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
