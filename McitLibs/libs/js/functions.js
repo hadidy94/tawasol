@@ -40,7 +40,7 @@ $('.tasks-carousel').owlCarousel({
     rtl: true,
     loop: true,
     autoplay:true,
-    mouseDrag: false,
+    mouseDrag: true,
     margin: 10,
     nav: true,
     dots: false,
@@ -71,6 +71,41 @@ $('.stories-carousel').owlCarousel({
     items: 1,
 });
 
+
+$('.projects-carousel').owlCarousel({
+    rtl: true,
+    loop: true,
+    autoplay:true,
+    mouseDrag: true,
+    margin: 15,
+    nav: true,
+    dots: false,
+    navText: ["<img src='McitLibs/images/icons/right-arr.svg'></img>", "<img src='McitLibs/images/icons/left-arr.svg'></img>"],
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+});
+
+
+$(function() {
+    $('.chart').easyPieChart({
+      size: 160,
+      barColor: "#60C235",
+      scaleLength: 0,
+      lineWidth: 15,
+      trackColor: "#DFE7EC",
+      lineCap: "circle",
+      animate: 2000,
+    });
+  });
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";

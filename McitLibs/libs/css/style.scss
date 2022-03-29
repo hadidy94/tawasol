@@ -9,12 +9,11 @@ $hover-color: #ffc107;
   color: $second-color;
 }
 .color-second {
-  color: #60C235;
+  color: #60c235;
 }
 
 .color-other {
-  color: #00DAE1;
-
+  color: #00dae1;
 }
 .btn-primary {
   background: $base-color;
@@ -52,7 +51,7 @@ header.fixed {
   z-index: 5555;
   left: 0;
   right: 0;
-  box-shadow: 0 0 10px rgb(0, 0, 0 / 29%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   .nav-item {
     .nav-link {
       color: #212529;
@@ -756,7 +755,7 @@ $container: 1200px;
 }
 
 .services {
-  padding: 100px 0;
+  padding: 100px 0 50px;
   .ser-title {
     h3 {
       color: $second-color;
@@ -926,7 +925,7 @@ $container: 1200px;
   height: 350px;
   position: relative;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  padding: 0px 0px 30px 0px;
+  padding: 0px 0px 100px 0px;
   .stories-shape svg {
     transform: translateX(-50%);
   }
@@ -966,6 +965,7 @@ $container: 1200px;
         position: relative;
         display: block;
         overflow: hidden;
+        height: 100%;
       }
       .overlay {
         position: absolute;
@@ -982,17 +982,183 @@ $container: 1200px;
           color: #fff;
         }
       }
-     
     }
   }
 }
 
+.projects {
+  padding: 80px 0;
+  .item {
+    position: relative;
+  }
+  .proj_img {
+    max-height: 350px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;;
+    }
+  }
+  .proj_desc {
+    background: #fff;
+    box-shadow: 0px 0px 30px #00000012;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 15px;
+    .box_progress {
+      width: 65px;
+      height: 65px;
+      .chart {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 22px;
+        line-height: 50px;
+        font-size: 15px;
+        line-height: 68px;
+        font-weight: bold;
+        color: #12368E;
+      }
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        width: 100%;
+      }
+    }
 
-.projects{
-   padding: 80px 0;
+    .date{
+      img {
+        width: 20px;
+        height: 15px;
+        margin-left: 5px;
+       
+      }
+      span {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .owl-controls {
+    position: absolute;
+    top: -85px;
+    right: 0;
+    .owl-nav [class*="owl-"] {
+      background: transparent;
+      padding: 0;
+      margin-left: 10px;
+      img {
+        width: 30px;
+      }
+      &:hover {
+        img {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+.files {
+  background: #eff5fb;
+  position: relative;
+  padding: 150px 0;
+  h1 {
+    color: $second-color;
+    text-align: center;
+  }
+  .pattern {
+    position: absolute;
+    left: 0;
+    top: -93px;
+    bottom: 0;
+    width: 35%;
+  }
+
+  .mcmo-structural {
+    min-height: 600px;
+    margin-bottom: -100px;
+    background: #fff;
+    box-shadow: 0px 20px 60px #0000001a;
+    border-radius: 20px;
+    margin-top: 30px;
+    z-index: 22;
+    position: relative;
+    .tool-bar{
+      background: #EFF5FB;
+      border-radius: 12px;
+      padding:  10px;
+
+      h3{
+        font-size: 20px;
+        margin-bottom: 0
+      }
+      .breadcrumb{
+        background: transparent;
+        li {
+          color: #B0B9BE;
+          font-size: 13px;
+          i {
+            font-size: 18px;
+          }
+          a{
+            color: $base-color
+          }
+
+        }
+      }
+    }
+
+    .folder-card {
+      margin-bottom: 20px;
+      a{
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover {
+          background: $base-color;
+          h6{
+            color: #fff;
+          }
+        }
+      }
+      h6 {
+        font-size: 13px;
+      }
+      span {
+        color: #B0B9BE
+      }
+    }
+
+    .documents {
+      .table {
+        border: none;
+        font-size: 13px;
+        font-weight: 300;
+        tr, td, th {
+          border: none;
+      }
+        thead {
+          background: $base-color;
+          color: #fff;
+          border-radius: 20px;
+          overflow: hidden;
+          th {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
 }
 footer {
-  background: $second-color;
+  background: #1650ED;
   padding: 20px 0;
   .footer_wrap {
     display: flex;
@@ -1010,6 +1176,7 @@ footer {
             color: #fff;
             text-decoration: none;
             transition: 0.3s;
+            font-size: 13px;
             &:hover {
               color: $hover-color;
             }

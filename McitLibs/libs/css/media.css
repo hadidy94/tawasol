@@ -23,6 +23,7 @@
   }
   .about .imgs{
     min-height: 400px;
+    margin-bottom: 30px;
   }
   .about .imgs div{
     max-width: 100% !important;
@@ -55,6 +56,7 @@
   }
   .stories {
     height: auto;
+    margin-top: 20px;
   }
   .stories .container{
     position: relative;
@@ -62,7 +64,7 @@
   .stories .container .stories-carousel:after {
     display: none;
 }
-.structural .pattern {
+.structural .pattern ,.files .pattern {
   position: absolute;
   left: 0;
   top: -53px;
@@ -79,4 +81,14 @@
 .carousel-fade .carousel-control-prev, .carousel-fade .carousel-control-next {
   left: 1%;
 }
+
+.projects .proj_desc .box_progress canvas{
+  width: 100% !important;
+    height: 100% !important;
+}
+.carousel-fade .carousel-item .carousel-caption h4 {
+  font-size: 25px;
+  line-height: 3rem;
+}
+
 }
